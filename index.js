@@ -1,5 +1,8 @@
 require('dotenv').config()
 const fetch = require('node-fetch')
+const telegram = require('node-telegram-bot-api')
+const bot = new telegram(process.env.TELEGRAM_TOKEN)
+
 
 const weatherToken = process.env.WEATHER_API_TOKEN
 
@@ -20,6 +23,7 @@ const getWeatherData = async() => {
 const main = async() => {
     const weatherData = await getWeatherData()
     const weatherMessage = generateWeatherMessage(weatherData)
+    bot.sendMessage(process.env.TELEGRAM_CHAT_ID, weatherMessage)
     console.log(weatherMessage)
 }
 
