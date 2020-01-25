@@ -2,7 +2,7 @@ mame: "Github Actions Weather Bot"
 
 on:
   schedule:
-    - cron "0 0 * * *"
+    - cron: "0 0 * * *"
 
 jobs:
   bot:
