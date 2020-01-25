@@ -1,4 +1,4 @@
-mame: "Github Actions Weather Bot"
+name: "Github Actions Weather Bot"
 
 on:
   push:
