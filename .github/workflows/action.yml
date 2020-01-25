@@ -1,0 +1,17 @@
+mame: "Github Actions Weather Bot"
+
+on:
+  schedule:
+    - "0 0 * * *"
+
+jobs:
+  bot:
+    steps:
+      - name: "Install node..."
+        uses: actions/setup-node@v1
+      - name: "Install dependencies..."
+        run: npm install
+      - name: "Run weather bot..."
+        run: node index.js
+        env:
+
