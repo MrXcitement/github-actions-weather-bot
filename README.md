@@ -32,3 +32,6 @@ $ sudo npm install npm@latest -g
 $ sudo apt install yarnpkg
 $ alias yarn=yarnpkg
 ```
+
+### Github actions notes
+I worked on the github actions steps in a branch. I am not sure that the action will run when pushed to a branch other than master? I will need to investigate the actions/checkout documentation.
