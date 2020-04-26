@@ -1,3 +1,5 @@
+[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/MrXcitement/github-actions-weather-bot) 
+
 # Github Actions Weather Bot
 
 [GitHub Actions Tutorial on Youtube](https://youtu.be/J4EhgEskSZA)
